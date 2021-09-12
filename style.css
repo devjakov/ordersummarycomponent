@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+/* ## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%) */
+
+/* GENERAL STYLING */
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Red Hat Display",sans-serif;
+    height: 100vh;
+}
+
+section{
+    display: flex;
+    height: 100%;
+}
+
+
+
+/* Creating the card look */
+
+.container{
+    flex-direction: column;
+    margin:auto;
+    
+    width: 360px;
+    height: 590px;
+
+    box-shadow: 1px 1px 75px hsl(224, 23%, 55%);
+    --radius: 2rem;
+    border-radius: var(--radius);
+}
+
+#hero{
+    width: 100%;
+    border-radius: var(--radius) var(--radius) 0  0 ;
+}
+
+/* Card info */
+
+.container h2{
+    text-align: center;
+    padding: 1.25rem 0;
+}
+
+.container p{
+    text-align: center;
+    line-height: 1.5rem;
+    opacity: .75;
+}
+
+.buyarea{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ecf0f1;
+    padding: 1rem 1rem;
+    margin: 1.25rem 1.5rem;
+    border-radius: 1rem;
+    height: 90px;
+}
+
+.priceoption{
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    padding-left: 5%;
+}
+.priceoption p,.priceoption strong{
+    text-align: left;
+    margin: .1rem 0;
+}
+
+a{
+    position: relative;
+    top: 33%;
+    height: 30px;
+}
+
+a:hover{
+    text-decoration: none;
+    opacity: .8;
+}
+
+.wrapper{
+   width: 86%;
+   height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.button_pay{
+    margin: .33rem 0rem 1rem;
+    height: 55%;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0px 15px 25px 5px rgba(46, 13, 194, 0.308);
+    background-color: #3742fa;
+    color: white;
+    z-index: 1;
+}
+
+.button_pay:hover{
+    cursor: pointer;
+    background-color: #4a37fa;
+    opacity: .9;
+}
+
+.button_cancel{
+    background: none;
+    border: none;
+    width: 40%;
+    margin: auto;
+}
+
+.button_cancel:hover{
+    font-weight: 700;
+    cursor: pointer;
+    opacity: .8;
+}
+
